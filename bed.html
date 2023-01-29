@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8554a65d36.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="static/js/includeHTML.js"></script>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/popup.css" />
+    <title>침대 등록</title>
+  </head>
+  <body>
+    <div include-html="header.html"></div>
+    <div id="content_wrapper">
+      <div include-html="left_menu.html"></div>
+      <div id="content">
+        <p>침대 등록</p>
+        <p>침대 정보를 입력해주세요.</p>
+        <div class="wrapper register_form">
+          <div>
+            <div class="title">
+              <p>침대 정보</p>
+            </div>
+            <div class="popup_bottom">
+              <table>
+                <tr>
+                  <td class="temp">소속</td>
+                  <td>
+                    <input type="text" placeholder="소속을 입력해주세요." />
+                  </td>
+                </tr>
+                <tr>
+                  <td>관리번호</td>
+                  <td>
+                    <input type="text" placeholder="관리번호를 입력해주세요." />
+                  </td>
+                </tr>
+                <tr>
+                  <td>핸드폰</td>
+                  <td>
+                    <input type="text" placeholder="핸드폰을 입력해주세요." />
+                  </td>
+                </tr>
+                <tr>
+                  <td>아이디</td>
+                  <td>
+                    <input type="text" placeholder="아이디를 입력해주세요." />
+                  </td>
+                  <td><button class="check_id">아이디 중복확인</button></td>
+                </tr>
+                <tr>
+                  <td>비밀번호</td>
+                  <td>
+                    <input type="text" placeholder="비밀번호를 입력해주세요." />
+                  </td>
+                </tr>
+                <tr>
+                  <td>비밀번호 확인</td>
+                  <td>
+                    <input
+                      type="text"
+                      placeholder="비밀번호를 다시 입력해주세요."
+                    />
+                  </td>
+                </tr>
+              </table>
+              <div class="btn">
+                <button class="submit">저장하기</button>
+                <button class="cancel">취소하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+@import "reset.css";
+
+.wrapper:not(.register_form) {
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+}
+.wrapper > .popup_top {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main_color);
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 4rem;
+  color: #fff;
+  padding: 0.7rem 2rem 0.6rem;
+  box-sizing: border-box;
+}
+.wrapper > .popup_top > .close_btn > i {
+  color: white;
+  cursor: pointer;
+}
+.popup_bottom {
+  padding: 2rem 2rem 3rem;
+  box-sizing: border-box;
+}
+.popup_bottom > table {
+  font-family: "NotoSans_Medium";
+}
+.popup_bottom > table td {
+  padding: 1rem 5rem 0 0;
+  box-sizing: border-box;
+}
+.popup_bottom > table input {
+  border: none;
+  background-color: transparent;
+  width: 20rem;
+}
+.popup_bottom > table input::placeholder {
+  color: var(--main_color);
+}
+.popup_bottom > table input:focus {
+  outline: none;
+}
+.popup_bottom > table input:focus::placeholder {
+  color: transparent;
+}
+.btn > button {
+  width: 10rem;
+  height: 3.6rem;
+  margin: 7rem 1rem 0 0;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "NotoSans_Bold";
+}
+.check_id {
+  background-color: var(--main_color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}

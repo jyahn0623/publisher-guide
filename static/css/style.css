@@ -1,0 +1,382 @@
+@import "reset.css";
+
+/* index.html */
+
+/* header */
+
+#header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#header > .title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-right: 4rem;
+}
+#header > .title > .title_text > .title_top {
+  font-size: 0.8rem;
+}
+#header > .date {
+  font-size: 2.2rem;
+}
+
+/* left menu */
+
+#content_wrapper {
+  display: flex;
+  margin-top: 70px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: var(--bg_color);
+  font-family: "NotoSans_Medium";
+}
+#left_menu {
+  width: 224px;
+  height: 100%;
+  background-color: var(--main_color);
+  font-size: 1.6rem;
+}
+#left_menu,
+.category_menu {
+  color: #fff;
+}
+#left_menu > div {
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dbdbdb;
+}
+#left_menu > div:last-child {
+  border-bottom: none;
+}
+#left_menu > div > ul {
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+#left_menu > div > ul > li {
+  margin: 2rem 0;
+}
+#left_menu > div > ul > li > a {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-chevron-right {
+  color: white;
+}
+
+/* content */
+
+#content {
+  padding: 2rem 3.5rem 17.4rem 2.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+#content > p {
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+#content > .wrapper {
+  display: flex;
+  gap: 3rem;
+}
+#content > .wrapper > div {
+  width: 100%;
+}
+#content > .wrapper > div > div {
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#content > .wrapper > .content_left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#content > .wrapper > div > div > p {
+  background-color: var(--main_color);
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 1.6rem 0.6rem;
+  box-sizing: border-box;
+}
+
+/* content_status */
+
+.status > .content_bottom {
+  padding: 2rem;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+
+/* content_notice */
+
+.notice > .content_bottom {
+  padding: 1.8rem;
+  box-sizing: border-box;
+  font-family: "NotoSans_Light";
+}
+.notice > .content_bottom > .board > ul > li > a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+}
+.notice > .content_bottom > .board > ul > li > a > .left {
+  display: flex;
+}
+.notice > .content_bottom > .board > ul > li > a > .left > .number {
+  margin-right: 1rem;
+}
+.notice > .content_bottom > .pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.8rem;
+  box-sizing: border-box;
+}
+.notice > .content_bottom > .pagination > .curr_page {
+  margin: 0 4.3rem;
+}
+.notice > .content_bottom > .pagination > i {
+  cursor: pointer;
+}
+
+/* content_reservation */
+
+.reservation > .content_bottom {
+  padding: 2.7rem;
+  box-sizing: border-box;
+  font-family: "NotoSans_Light";
+}
+.reservation > .content_bottom > .date,
+.reservation > .content_bottom > .pagination {
+  display: flex;
+  justify-content: center;
+}
+.reservation > .content_bottom > .date > .today {
+  margin: 0 2.2rem;
+}
+.reservation > .content_bottom > .pagination > .curr_page {
+  margin: 0 4.3rem;
+}
+.reservation_list {
+  padding: 2rem 0 3rem;
+  box-sizing: border-box;
+}
+.reservation_list > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.reservation_list > ul > li {
+  flex-basis: calc(50% - 1.4rem);
+  width: 100%;
+  border-radius: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.reservation_list > ul > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+}
+.reservation_list > ul > li > a > .left {
+  display: flex;
+}
+.reservation_list > ul > li > a > .left > .num {
+  margin-right: 2rem;
+}
+
+/* index_2.html */
+
+/* select */
+
+.section_left > .select > .content_bottom {
+  padding: 1.2rem 1rem 3rem 1.2rem;
+  box-sizing: border-box;
+}
+.section_left > .select > .content_bottom > ul > li {
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1.4rem;
+}
+.section_left > .select > .content_bottom > ul > li > a {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+.section_left > .select > .content_bottom > .pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+.section_left > .select > .content_bottom > .pagination > i {
+  cursor: pointer;
+}
+.section_left > .select > .content_bottom > .pagination > .curr_page {
+  margin: 0 3rem;
+}
+
+/* on_off & save_mode */
+
+.section_middle > div > .content_bottom {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.section_middle > div > .content_bottom > div {
+  cursor: pointer;
+  padding: 2.33rem;
+  box-sizing: border-box;
+  font-size: 3.2rem;
+  text-align: center;
+}
+.section_middle > div > .content_bottom > div:first-child {
+  border: 3px solid #00ff00;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+.section_middle > div > .content_bottom > div:last-child {
+  border: 3px solid #ff0000;
+  border-radius: 2rem;
+  color: #ff0000;
+}
+.on_off {
+  margin-bottom: 2rem;
+}
+
+/* bed_setting */
+
+.bed_setting > .content_bottom {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.bed_setting > .content_bottom > div {
+  padding-bottom: 12rem;
+  box-sizing: border-box;
+}
+.bed_setting > .content_bottom > div > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+.bed_setting > .content_bottom p {
+  line-height: 4rem;
+}
+.bed_setting > .content_bottom input {
+  width: 70%;
+  border: solid 2px #707070;
+  border-radius: 1.4rem;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  box-sizing: border-box;
+  margin-right: 1.5rem;
+}
+.bed_setting > .content_bottom input:focus {
+  outline: none;
+}
+.bed_setting > .content_bottom input:focus::placeholder {
+  color: transparent;
+}
+.bed_setting > .content_bottom button {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1.4rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  font-family: "NotoSans_Medium";
+}
+.bed_setting > .content_bottom > .bottom > .height > .up {
+  margin-bottom: 1rem;
+}
+
+/* therapist_list.html */
+
+#content > p:nth-child(2) {
+  font-size: 1.5rem;
+}
+.therapist_list_wrapper > .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main_color);
+  padding: 0.8rem 3rem 0.8rem 0;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+.therapist_list_wrapper > .title > button {
+  width: 7rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  font-family: "NotoSans_Medium";
+}
+.therapist_list_wrapper > .content_bottom {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.search_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+.search_wrapper > div {
+  display: flex;
+  align-items: center;
+}
+.search_wrapper > div p {
+  margin-right: 1rem;
+}
+.search_wrapper > .left > input {
+  width: 4rem;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+}
+.search_wrapper > .left input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+.search_wrapper > .middle > .curr_page {
+  margin: 0 1rem;
+}
+.therapist_list > table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.therapist_list > table th {
+  border-top: 1px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+.therapist_list > table td {
+  padding-top: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.therapist_list_wrapper > .content_bottom > .pagination {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 2rem 3rem 0.5rem;
+  box-sizing: border-box;
+}
+.therapist_list_wrapper > .content_bottom > .pagination > .curr_page {
+  margin: 0 4rem;
+}
+
+/* therapist.html */
+.register_form {
+  width: 60%;
+}

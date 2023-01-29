@@ -1,0 +1,22 @@
+.wrapper > .therapist_list {
+  padding: 3.5rem 2rem 7rem;
+  box-sizing: border-box;
+}
+.wrapper > .therapist_list > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.wrapper > .therapist_list > ul > li {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1.8rem;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+}
+.wrapper > .therapist_list > ul > li > a {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper > .therapist_list > ul > li > a > .name > span {
+  font-family: "NotoSans_Medium";
+}

@@ -1,0 +1,118 @@
+@font-face {
+  src: url("../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Light.otf");
+  font-family: "NotoSans_Light";
+}
+@font-face {
+  src: url("../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf");
+  font-family: "NotoSans_Medium";
+}
+@font-face {
+  src: url("../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Bold.otf");
+  font-family: "NotoSans_Bold";
+}
+
+:root {
+  --main_color: #191919;
+  --bg_color: #f1f1f1;
+}
+html {
+  font-size: 10px;
+  font-family: "NotoSans_Light";
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: 0 none;
+}
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+body {
+  background: #fff;
+}
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "NotoSans_Light";
+  color: var(--main_color);
+}
+a {
+  color: var(--main_color);
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
