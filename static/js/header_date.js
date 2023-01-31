@@ -1,4 +1,4 @@
-const headerDate = document.querySelector(".date");
+const headerDate = document.querySelector("#date");
 
 const dayArr = ["일", "월", "화", "수", "목", "금", "토"];
 const year = new Date().getFullYear();
