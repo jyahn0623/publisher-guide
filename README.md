@@ -26,7 +26,7 @@
   - 계정 정보
     - (Google 로그인) 
       - ID: meketiar@gmail.com
-      - PW: Mkzhsjt4500
+      - PW: MKzhsjt4500
 
 - (3) Github와 Zeplin에 친숙해지기
   - Zeplin 접속 후 로그인하여 `안마베드 WEB` 프로젝트를 통하여 제플린의 인터페이스 및 사용 방안을 익히는 것이 좋습니다.
