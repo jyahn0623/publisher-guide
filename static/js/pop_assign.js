@@ -36,6 +36,7 @@ window.addEventListener("load", () => {
   const therapistList = document.querySelectorAll(".therapist_list > ul > li"); ///자식창
   /* display: block 됐을 때가 부모창opener를 쓸 수 있을 때지 */
 
+  /* console.log(therapistList); */
   therapistList.forEach((li) => {
     li.addEventListener("click", () => {
       const name = li.querySelector(".name > span").innerText;

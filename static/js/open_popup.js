@@ -20,8 +20,12 @@ if (popupBtn) {
 function openWin() {
   popup.classList.remove("closed");
   popup.classList.add("opened");
+  dateInput.style.opacity = 0;
 }
 function closeWin() {
   popup.classList.remove("opened");
   popup.classList.add("closed");
+  setTimeout(() => {
+    dateInput.style.opacity = 1;
+  }, 200);
 }
