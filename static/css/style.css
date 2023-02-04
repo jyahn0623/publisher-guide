@@ -4,6 +4,9 @@
 
 /* header */
 
+.content_bottom {
+  background-color: #fff;
+}
 #header {
   position: absolute;
   top: 0;
@@ -15,20 +18,36 @@
   padding: 20px;
   box-sizing: border-box;
 }
-
-#header > .title {
+#header > a {
+  text-decoration: none;
+}
+#header > a > .title {
   display: flex;
   align-items: center;
   font-size: 1.6rem;
   margin-right: 4rem;
 }
-#header > .title > .title_text > .title_top {
+#header > a > .title > .title_text > .title_top {
   font-size: 0.8rem;
 }
-#header > .date {
+#date {
   font-size: 2.2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  font-family: "NotoSans_Medium";
 }
-
+.calendar {
+  margin-left: 10px;
+}
+.calendar > input {
+  position: relative;
+  border: none;
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
 /* left menu */
 
 #content_wrapper {
@@ -37,7 +56,7 @@
   width: 100%;
   height: calc(100vh - 70px);
   background-color: var(--bg_color);
-  font-family: "NotoSans_Medium";
+  font-family: "NotoSans_Regular";
 }
 #left_menu {
   width: 224px;
@@ -106,6 +125,10 @@
   padding: 1rem 1.6rem 0.6rem;
   box-sizing: border-box;
 }
+.home > .category > a {
+  color: white;
+  text-decoration: none;
+}
 
 /* content_status */
 
@@ -137,6 +160,7 @@
 .notice > .content_bottom > .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 1.8rem;
   box-sizing: border-box;
 }
@@ -158,6 +182,7 @@
 .reservation > .content_bottom > .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .reservation > .content_bottom > .date > .today {
   margin: 0 2.2rem;
@@ -302,6 +327,10 @@
 
 /* therapist_list.html */
 
+.therapist_list > table th {
+  font-family: "NotoSans_Medium";
+}
+
 #content > p:nth-child(2) {
   font-size: 1.5rem;
 }
@@ -320,6 +349,9 @@
   background-color: #fff;
   border-radius: 0.4rem;
   font-family: "NotoSans_Medium";
+}
+.therapist_list_wrapper > .title > button.opened {
+  background-color: green;
 }
 .therapist_list_wrapper > .content_bottom {
   padding: 1.5rem;
@@ -377,6 +409,7 @@
 }
 
 /* therapist.html */
+
 .register_form {
   width: 60rem;
 }

@@ -11,6 +11,7 @@ function includeHTML() {
           elmnt.innerHTML = this.responseText;
           elmnt.removeAttribute("include-html");
           includeHTML();
+          setHeaderDate();
         }
       };
       xhttp.open("GET", file, true);

@@ -32,7 +32,11 @@
                 </div>
                 <div class="middle">
                   <i class="fa-solid fa-angle-left"></i>
-                  <div class="curr_page">0000.00 ~ 0000.00</div>
+                  <div class="calendar">
+                    <input type="month" class="start_calendar" />
+                    <span>~</span>
+                    <input type="month" class="end_calendar" />
+                  </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
                 <div class="right">
@@ -165,5 +169,7 @@
     <script>
       includeHTML();
     </script>
+    <script src="static/js/header_date.js"></script>
+    <script src="static/js/calendar.js"></script>
   </body>
 </html>

@@ -1,6 +1,8 @@
 .wrapper > .therapist_list {
   padding: 3.5rem 2rem 7rem;
   box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .wrapper > .therapist_list > ul {
   display: grid;

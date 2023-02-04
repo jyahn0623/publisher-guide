@@ -13,6 +13,7 @@
     <title>안마사 조회/관리</title>
   </head>
   <body>
+    <div include-html="pop_info.html" class="popup"></div>
     <div include-html="header.html"></div>
     <div id="content_wrapper">
       <div include-html="left_menu.html"></div>
@@ -23,7 +24,7 @@
           <div class="therapist_list_wrapper">
             <div class="title">
               <p>안마사 정보</p>
-              <button onclick="openPopup('pop_info')">정보수정</button>
+              <button class="popupBtn">정보수정</button>
             </div>
             <div class="content_bottom">
               <div class="search_wrapper">
@@ -33,7 +34,11 @@
                 </div>
                 <div class="middle">
                   <i class="fa-solid fa-angle-left"></i>
-                  <div class="curr_page">0000.00 ~ 0000.00</div>
+                  <div class="calendar">
+                    <input type="month" class="start_calendar" />
+                    <span>~</span>
+                    <input type="month" class="end_calendar" />
+                  </div>
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
                 <div class="right">
@@ -164,6 +169,8 @@
       </div>
     </div>
     <script src="static/js/open_popup.js"></script>
+    <script src="static/js/header_date.js"></script>
+    <script src="static/js/calendar.js"></script>
     <script>
       includeHTML();
     </script>

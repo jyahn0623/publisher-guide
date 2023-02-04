@@ -1,6 +1,23 @@
 @import "reset.css";
 
-.wrapper:not(.register_form) {
+.popup_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popup_container > .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+}
+.popup_container > .wrapper:not(.register_form) {
   width: 800px;
   height: 450px;
   position: absolute;
@@ -9,7 +26,7 @@
   transform: translate(-50%, -50%);
   font-size: 1.8rem;
 }
-.wrapper > .popup_top {
+.popup_container > .wrapper > .popup_top {
   display: flex;
   justify-content: space-between;
   background-color: var(--main_color);
@@ -19,13 +36,15 @@
   padding: 0.7rem 2rem 0.6rem;
   box-sizing: border-box;
 }
-.wrapper > .popup_top > .close_btn > i {
+.popup_container > .wrapper > .popup_top > .close_btn > i {
   color: white;
   cursor: pointer;
 }
 .popup_bottom {
   padding: 2rem 2rem 3rem;
   box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .popup_bottom > table {
   font-family: "NotoSans_Medium";
@@ -62,4 +81,39 @@
   padding: 0.5rem 1rem;
   box-sizing: border-box;
   border-radius: 0.5rem;
+}
+
+/* popup */
+
+.popup {
+  visibility: hidden;
+}
+.popup.opened {
+  animation: fadeIn 0.3s forwards;
+}
+.popup.closed {
+  animation: fadeOut 0.3s forwards;
+}
+
+/* animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

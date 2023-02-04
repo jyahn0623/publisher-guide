@@ -13,6 +13,7 @@
     <title>침대 조회/관리</title>
   </head>
   <body>
+    <div include-html="pop_bed_info.html" class="popup"></div>
     <div include-html="header.html"></div>
     <div id="content_wrapper">
       <div include-html="left_menu.html"></div>
@@ -23,7 +24,7 @@
           <div class="therapist_list_wrapper">
             <div class="title">
               <p>침대 정보</p>
-              <button onclick="openPopup('pop_bed_info')">정보수정</button>
+              <button class="popupBtn">정보수정</button>
             </div>
             <div class="content_bottom">
               <div class="search_wrapper">
@@ -148,6 +149,7 @@
       </div>
     </div>
     <script src="static/js/open_popup.js"></script>
+    <script src="static/js/header_date.js"></script>
     <script>
       includeHTML();
     </script>

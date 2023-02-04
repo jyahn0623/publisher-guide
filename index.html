@@ -8,12 +8,13 @@
       src="https://kit.fontawesome.com/8554a65d36.js"
       crossorigin="anonymous"
     ></script>
-    <script src="static/js/header_date.js" defer></script>
     <script src="static/js/includeHTML.js"></script>
+    <link rel="stylesheet" href="static/css/popup.css" />
     <link rel="stylesheet" href="static/css/style.css" />
     <title>두드림 DoDream</title>
   </head>
   <body>
+    <div include-html="pop_assign.html" class="popup"></div>
     <div include-html="header.html"></div>
     <div id="content_wrapper">
       <div include-html="left_menu.html"></div>
@@ -178,9 +179,9 @@
             <div class="reservation">
               <p>예약관리</p>
               <div class="content_bottom">
-                <div class="date">
+                <div class="date calendar">
                   <i class="fa-solid fa-angle-left"></i>
-                  <div class="today">0000.00.00</div>
+                  <input type="date" class="today" />
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
                 <div class="reservation_list">
@@ -342,7 +343,11 @@
         </div>
       </div>
     </div>
+    <script src="static/js/open_popup.js"></script>
     <script src="static/js/open_pop_assign.js"></script>
+    <script src="static/js/pop_assign.js"></script>
+    <script src="static/js/header_date.js"></script>
+    <script src="static/js/index_calendar.js"></script>
     <script>
       includeHTML();
     </script>

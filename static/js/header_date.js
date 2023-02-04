@@ -1,20 +1,18 @@
-const headerDate = document.querySelector("#date");
+function setHeaderDate() {
+  const headerDate = document.querySelector("#date");
+  const dayArr = ["일", "월", "화", "수", "목", "금", "토"];
 
-const dayArr = ["일", "월", "화", "수", "목", "금", "토"];
-const year = new Date().getFullYear();
-let month = new Date().getMonth() + 1;
-let date = new Date().getDate();
-const day = new Date().getDay();
-
-if (month < 10) {
-  month = `0${month}`;
-} else {
-  month = month;
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth() + 1;
+  const date = today.getDate();
+  const day = today.getDay();
+  if (headerDate !== null) {
+    headerDate.innerHTML = `${year}년 ${padZeros(month)}월 ${padZeros(
+      date
+    )}일 ${dayArr[day]}요일`;
+  }
 }
-if (date < 10) {
-  date = `0${date}`;
-} else {
-  date = date;
+function padZeros(num) {
+  return num < 10 ? `0${num}` : `${num}`;
 }
-
-headerDate.innerHTML = `${year}년 ${month}월 ${date}일 ${dayArr[day]}요일`;

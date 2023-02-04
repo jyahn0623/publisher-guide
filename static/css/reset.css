@@ -3,6 +3,10 @@
   font-family: "NotoSans_Light";
 }
 @font-face {
+  src: url("../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf");
+  font-family: "NotoSans_Regular";
+}
+@font-face {
   src: url("../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf");
   font-family: "NotoSans_Medium";
 }
